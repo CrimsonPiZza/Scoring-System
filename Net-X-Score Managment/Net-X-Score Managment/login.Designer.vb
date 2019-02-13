@@ -22,7 +22,9 @@ Partial Class loginform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginform))
         Me.FormSkin1 = New Net_X_Score_Managment.FormSkin()
+        Me.FlatMini1 = New Net_X_Score_Managment.FlatMini()
         Me.exitbutt = New Net_X_Score_Managment.FlatButton()
         Me.loginbutt = New Net_X_Score_Managment.FlatButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -30,7 +32,6 @@ Partial Class loginform
         Me.FlatLabel1 = New Net_X_Score_Managment.FlatLabel()
         Me.usernametxt = New Net_X_Score_Managment.FlatTextBox()
         Me.label1 = New Net_X_Score_Managment.FlatLabel()
-        Me.FlatMini1 = New Net_X_Score_Managment.FlatMini()
         Me.FormSkin1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -56,9 +57,22 @@ Partial Class loginform
         Me.FormSkin1.HeaderMaximize = False
         Me.FormSkin1.Location = New System.Drawing.Point(0, 0)
         Me.FormSkin1.Name = "FormSkin1"
-        Me.FormSkin1.Size = New System.Drawing.Size(525, 227)
+        Me.FormSkin1.Size = New System.Drawing.Size(464, 227)
         Me.FormSkin1.TabIndex = 0
         Me.FormSkin1.Text = "Login to Net-X Score Management System"
+        '
+        'FlatMini1
+        '
+        Me.FlatMini1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.FlatMini1.BackColor = System.Drawing.Color.White
+        Me.FlatMini1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.FlatMini1.Font = New System.Drawing.Font("Marlett", 12.0!)
+        Me.FlatMini1.Location = New System.Drawing.Point(434, 12)
+        Me.FlatMini1.Name = "FlatMini1"
+        Me.FlatMini1.Size = New System.Drawing.Size(18, 18)
+        Me.FlatMini1.TabIndex = 5
+        Me.FlatMini1.Text = "FlatMini1"
+        Me.FlatMini1.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
         '
         'exitbutt
         '
@@ -66,11 +80,11 @@ Partial Class loginform
         Me.exitbutt.BaseColor = System.Drawing.Color.IndianRed
         Me.exitbutt.Cursor = System.Windows.Forms.Cursors.Hand
         Me.exitbutt.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        Me.exitbutt.Location = New System.Drawing.Point(382, 183)
+        Me.exitbutt.Location = New System.Drawing.Point(321, 183)
         Me.exitbutt.Name = "exitbutt"
         Me.exitbutt.Rounded = False
         Me.exitbutt.Size = New System.Drawing.Size(131, 32)
-        Me.exitbutt.TabIndex = 6
+        Me.exitbutt.TabIndex = 4
         Me.exitbutt.Text = "Exit"
         Me.exitbutt.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
         '
@@ -83,13 +97,14 @@ Partial Class loginform
         Me.loginbutt.Location = New System.Drawing.Point(159, 183)
         Me.loginbutt.Name = "loginbutt"
         Me.loginbutt.Rounded = False
-        Me.loginbutt.Size = New System.Drawing.Size(217, 32)
-        Me.loginbutt.TabIndex = 5
+        Me.loginbutt.Size = New System.Drawing.Size(156, 32)
+        Me.loginbutt.TabIndex = 3
         Me.loginbutt.Text = "Login"
         Me.loginbutt.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(12, 59)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(130, 156)
@@ -104,8 +119,8 @@ Partial Class loginform
         Me.passwordtxt.Multiline = False
         Me.passwordtxt.Name = "passwordtxt"
         Me.passwordtxt.ReadOnly = False
-        Me.passwordtxt.Size = New System.Drawing.Size(354, 29)
-        Me.passwordtxt.TabIndex = 3
+        Me.passwordtxt.Size = New System.Drawing.Size(293, 29)
+        Me.passwordtxt.TabIndex = 2
         Me.passwordtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.passwordtxt.TextColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.passwordtxt.UseSystemPasswordChar = True
@@ -119,7 +134,7 @@ Partial Class loginform
         Me.FlatLabel1.Location = New System.Drawing.Point(154, 116)
         Me.FlatLabel1.Name = "FlatLabel1"
         Me.FlatLabel1.Size = New System.Drawing.Size(97, 25)
-        Me.FlatLabel1.TabIndex = 2
+        Me.FlatLabel1.TabIndex = 6
         Me.FlatLabel1.Text = "Password"
         '
         'usernametxt
@@ -130,7 +145,7 @@ Partial Class loginform
         Me.usernametxt.Multiline = False
         Me.usernametxt.Name = "usernametxt"
         Me.usernametxt.ReadOnly = False
-        Me.usernametxt.Size = New System.Drawing.Size(354, 29)
+        Me.usernametxt.Size = New System.Drawing.Size(293, 29)
         Me.usernametxt.TabIndex = 1
         Me.usernametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.usernametxt.TextColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(168, Byte), Integer), CType(CType(109, Byte), Integer))
@@ -148,24 +163,11 @@ Partial Class loginform
         Me.label1.TabIndex = 0
         Me.label1.Text = "Username"
         '
-        'FlatMini1
-        '
-        Me.FlatMini1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.FlatMini1.BackColor = System.Drawing.Color.White
-        Me.FlatMini1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(47, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.FlatMini1.Font = New System.Drawing.Font("Marlett", 12.0!)
-        Me.FlatMini1.Location = New System.Drawing.Point(495, 12)
-        Me.FlatMini1.Name = "FlatMini1"
-        Me.FlatMini1.Size = New System.Drawing.Size(18, 18)
-        Me.FlatMini1.TabIndex = 7
-        Me.FlatMini1.Text = "FlatMini1"
-        Me.FlatMini1.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
-        '
         'loginform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(525, 227)
+        Me.ClientSize = New System.Drawing.Size(464, 227)
         Me.Controls.Add(Me.FormSkin1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "loginform"
