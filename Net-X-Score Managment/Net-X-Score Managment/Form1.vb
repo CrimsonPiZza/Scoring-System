@@ -1,3 +1,4 @@
-﻿Public Class Form1
+﻿Public Class loginform
+
 
 End Class
